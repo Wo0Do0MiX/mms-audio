@@ -1,0 +1,45 @@
+<?php
+	$podcastgen_version = "2.7";
+	$first_installation = 1529398111;
+	$installationKey = "5hw3me12";
+	$scriptlang = "mk_MK";
+	$url = "https://50.3.81.181/";
+	$absoluteurl = "/var/www/html/"; 
+	$theme_path = "themes/exposure/"; // Темплејт
+	$username = ""; // Администраторско корисничко име
+	$userpassword = ""; //MD5 хеш си направи
+	$max_upload_form_size = "104857600"; 
+	$upload_dir = "media/"; 
+	$img_dir = "images/";  
+	$feed_dir = ""; 
+	$max_recent = 4; 
+	$recent_episode_in_feed = "All"; 
+	$episodeperpage = 10;
+	$enablestreaming = "yes"; 
+	$enablesocialnetworks = array(1,1,1,); 
+	$dateformat = "d-m-Y"; 
+	$freebox = "yes"; 
+	$enablehelphints = "yes";
+	$enablepgnewsinadmin = "no";
+	$strictfilenamepolicy = "yes";
+	$categoriesenabled = "yes";
+	$cronAutoIndex = 1; 
+	$cronAutoRegenerateRSS = 1;
+	$cronAutoRegenerateRSScacheTime = 21600;
+	$feed_iTunes_LINKS_Website = "";
+	$feed_URL_replace = "";
+	$feed_iTunes_URL_replace = "";
+	$podcast_title = "Наслов";
+	$podcast_subtitle = "Поднаслов";
+	$podcast_description = "Краток опис";
+	$author_name = "Test"; 
+	$author_email = "test@mms.mk"; 
+	$itunes_category[0] = "Вести";
+	$itunes_category[1] = "";
+	$itunes_category[2] = "";
+	$link = $url."?name=";
+	$feed_language = "mk_MK";
+	$copyright = "ММС - Македонски Медиа Сервис";
+	$feed_encoding = "utf-8";
+	$explicit_podcast = "no";
+?>

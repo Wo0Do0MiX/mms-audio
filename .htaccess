@@ -1,0 +1,51 @@
+RewriteEngine on
+RewriteCond %{request_filename} -f
+RewriteRule ^(.*) 									$1												[L]
+RewriteRule ^(([^/]*)+)?$							index.php?a=$1									[L]
+
+RewriteRule ^welcome/?$								index.php?a=welcome								[NC]
+
+RewriteRule ^stream/?$								index.php?a=stream								[NC]
+RewriteRule ^stream/logout/([^/]+)/?$				index.php?a=stream&logout=1&token_id=$1			[NC]
+
+RewriteRule ^explore/?$								index.php?a=explore								[NC]
+RewriteRule ^explore/filter/([^/]+)/?$				index.php?a=explore&filter=$1					[NC]
+
+RewriteRule ^upload/?$								index.php?a=upload								[NC]
+
+RewriteRule ^pro/?$									index.php?a=pro									[NC]
+
+RewriteRule ^stats/?$								index.php?a=stats								[NC]
+RewriteRule ^stats/filter/([^/]+)/?$				index.php?a=stats&filter=$1						[NC]
+
+RewriteRule ^profile/([^/]+)/?$						index.php?a=profile&u=$1						[NC]
+RewriteRule ^profile/([^/]+)/([^/]+)/?$				index.php?a=profile&u=$1&r=$2					[NC]
+RewriteRule ^profile/([^/]+)/filter/([^/]+)/?$		index.php?a=profile&u=$1&filter=$2				[NC]
+
+RewriteRule ^notifications/?$						index.php?a=notifications						[NC]
+RewriteRule ^notifications/filter/([^/]+)/?$		index.php?a=notifications&filter=$1				[NC]
+
+RewriteRule ^settings/?$							index.php?a=settings							[NC]
+RewriteRule ^settings/([^/]+)/?$					index.php?a=settings&b=$1						[NC]
+
+RewriteRule ^messages/?$							index.php?a=messages							[NC]
+RewriteRule ^messages/([^/]+)/([^/]+)/?$			index.php?a=messages&u=$1&id=$2					[NC]
+
+RewriteRule ^track/([^/]+)/?$						index.php?a=track&id=$1							[NC]
+RewriteRule ^track/([^/]+)/edit/?$					index.php?a=track&id=$1&type=edit				[NC]
+RewriteRule ^track/([^/]+)/report/?$				index.php?a=track&id=$1&type=report				[NC]
+RewriteRule ^track/([^/]+)/stats/?$					index.php?a=track&id=$1&type=stats				[NC]
+RewriteRule ^track/([^/]+)/likes/?$					index.php?a=track&id=$1&type=likes				[NC]
+RewriteRule ^track/([^/]+)/stats/filter/([^/]+)/?$	index.php?a=track&id=$1&type=stats&filter=$2	[NC]
+RewriteRule ^track/([^/]+)/([^/]+)/?$				index.php?a=track&id=$1&name=$2					[NC]
+
+RewriteRule ^playlist/([^/]+)/?$					index.php?a=playlist&id=$1						[NC]
+RewriteRule ^playlist/([^/]+)/edit/?$				index.php?a=playlist&id=$1&edit=true			[NC]
+RewriteRule ^playlist/([^/]+)/([^/]+)/?$			index.php?a=playlist&id=$1&name=$2				[NC]
+
+RewriteRule ^search/filter/([^/]+)/([^/]+)/?$		index.php?a=search&filter=$1&q=$2				[NC]
+
+RewriteRule ^page/([^/]+)/?$						index.php?a=page&b=$1							[NC]
+
+RewriteRule ^recover/?$								index.php?a=recover								[NC]
+RewriteRule ^recover/do/?$							index.php?a=recover&r=1							[NC]

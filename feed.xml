@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!-- generator="ММС Аудио Вести 2.7" -->
+	<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xml:lang="en" version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Тест</title>
+		<link>https://50.3.81.181/</link>
+		<atom:link href="https://50.3.81.181/feed.xml" rel="self" type="application/rss+xml" />
+		<description>A little description of your podcast.</description>
+		<generator>ММС Аудио Вести 2.7 - https://mms.mk</generator>
+		<lastBuildDate>Wed, 20 Jun 2018 04:12:06 +0000</lastBuildDate>
+		<language>en</language>
+		<copyright>Your copyright notice</copyright>
+		<itunes:image href="https://50.3.81.181/images/itunes_image.jpg" />
+		<image>
+		<url>https://50.3.81.181/images/itunes_image.jpg</url>
+		<title>Podcast Title</title>
+		<link>https://50.3.81.181/</link>
+		</image>
+		<itunes:summary>тест.</itunes:summary>
+		<itunes:subtitle>тест</itunes:subtitle>
+		<itunes:author>тест</itunes:author>
+		<itunes:owner>
+		<itunes:name>тест</itunes:name>
+		<itunes:email>test@тест.com</itunes:email>
+		</itunes:owner>
+		<itunes:explicit>no</itunes:explicit>
+		
+		<itunes:category text="Arts"></itunes:category>
+		
+	</channel>
+	</rss>
